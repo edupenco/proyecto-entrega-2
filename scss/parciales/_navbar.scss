@@ -1,0 +1,23 @@
+.enlaces__lista {
+    margin-top: 2px;
+    padding: 30px;
+    border: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 200, 250, 25%);
+    border-radius:  4px; ;
+    list-style: none;
+}
+.enlaces__lista a{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.enlaces__lista a:hover{ 
+    color: white; 
+    transition: .7s;
+}
+/* .jam-close{
+    display: none;
+} */

@@ -1,0 +1,736 @@
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.logoheader {
+  margin-bottom: 8px;
+  width: 3000px;
+  height: 300px;
+  align-items: baseline;
+}
+
+.logo-principal {
+  width: 300px;
+  height: 200px;
+}
+
+.nav_whatsapp {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 280px;
+  top: 25px;
+}
+
+.nav_sucursales {
+  position: absolute;
+  font-size: 1.8rem;
+  background-color: #00c8fa;
+  color: white;
+  display: inline-block;
+  right: 140px;
+  top: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.enlaces__lista {
+  margin-top: 2px;
+  padding: 30px;
+  border: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #00c8fa;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.enlaces__lista a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.enlaces__lista a:hover {
+  color: white;
+  transition: .7s;
+}
+
+/* .jam-close{
+    display: none;
+} */
+.subtitulo {
+  display: flex;
+  text-align: center;
+}
+
+.car {
+  display: none;
+}
+
+.subtitulo__sublogo {
+  height: 195px;
+  position: absolute;
+}
+
+.subtitulo__texto {
+  position: relative;
+  color: #0d0ddd;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
+}
+
+div.buscador {
+  font-size: 1rem;
+  margin: 1rem;
+  width: 220px;
+  height: 35px;
+  margin: 1rem;
+}
+
+div.buscador h3.buscador-lugar {
+  border-radius: 8px;
+  color: blue;
+  background-color: #00c8fa6c;
+}
+
+div.buscador h3.buscador-inicio {
+  border-radius: 8px;
+  color: blue;
+  background-color: #00c8fa6c;
+}
+
+div.buscador h3.buscador-entrega {
+  border-radius: 8px;
+  color: blue;
+  background-color: #00c8fa6c;
+}
+
+.img-fluid {
+  width: 100px;
+  height: 300px;
+  float: right;
+  margin-top: 15rem;
+  margin-right: 2rem;
+  transition: all .5s ease-in-out;
+}
+
+.img-fluid:hover {
+  filter: blur(2px);
+}
+
+.img-thumbnail {
+  width: 600px;
+}
+
+.btn-primary {
+  width: 70px;
+}
+
+.lugar {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.inputLugar {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+
+.inicio {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.inputInicio {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+
+.entrega {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: blue;
+  background-color: #00c8fa;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.inputEntrega {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+
+.btn-info {
+  font-weight: bold;
+  color: blue;
+  background-color: #00c8fa;
+}
+
+.btn-buscar {
+  font-size: 1.5rem;
+  width: 100px;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: blue;
+  background-color: #00c8fa;
+}
+
+.jam-close {
+  display: none;
+}
+
+/* .btnbuscar{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 6rem;
+    height: 2rem;
+    background-color:rgb(0, 200, 250) ;
+    color: blue;
+} */
+.fondo {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.tit {
+  display: flex;
+  margin-top: 15rem;
+}
+
+.tituloFooter {
+  color: blue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+.parrafo {
+  color: blue;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.centrado {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoFinal {
+  width: 180px;
+  height: 120px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.buttons a {
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all .4s ease-in-out;
+}
+
+.buttonla {
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  background-color: #314652;
+  border-radius: 50%;
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerbuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.subtituloReserva {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  color: blue;
+  margin: 4rem;
+}
+
+.reserva {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+  margin-top: -8rem;
+}
+
+.nroReserva {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: blue;
+  background-color: #00c8fa;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.inputReserva {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+
+.oferta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulooferta {
+  margin-top: 4rem;
+  font-family: Verdana;
+  font-size: 2rem;
+  color: blue;
+  border-radius: 4px;
+}
+
+.logooferta {
+  width: 300px;
+  height: 300px;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.anunciooferta {
+  margin-bottom: 6rem;
+  font-family: Verdana;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(132, 178, 247, 0.74);
+  border-radius: 4px;
+}
+
+.mp {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 6rem;
+}
+
+.titulogmbaja {
+  margin-top: 3rem;
+  font-family: Verdana;
+  font-size: 2rem;
+  color: blue;
+}
+
+.gmbaja {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.titulogmmedia {
+  margin-top: 3rem;
+  font-family: Verdana;
+  font-size: 2rem;
+  color: blue;
+}
+
+.gmmedia {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.gamamedia {
+  margin-bottom: 4rem;
+}
+
+.tituloclub {
+  font-size: 1.5rem;
+  color: blue;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 2px;
+  border: black 2px;
+}
+
+.registrate {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+  background-color: #00c8fa;
+  color: blue;
+}
+
+.titulosucursales {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: blue;
+}
+
+.lista--sucursales {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.menu {
+  display: none;
+}
+
+.seccion1 {
+  padding: 100px 0;
+}
+
+/*media query max 1023px*/
+@media screen and (max-width: 1023px) and (min-width: 601px) {
+  .logo-principal {
+    width: 250px;
+    height: 140px;
+    margin-top: 1rem;
+  }
+  .logoheader {
+    flex-direction: row-reverse;
+    width: 500px;
+    height: 200px;
+    margin-right: 0rem;
+  }
+  .nav_sucursales {
+    margin-right: 2rem;
+  }
+  .nav_whatsapp {
+    width: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 5rem;
+  }
+  .enlaces {
+    width: 100%;
+    height: 2px;
+  }
+  .enlaces__lista a {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: -5rem;
+    justify-content: center;
+  }
+  .subtitulo__texto {
+    width: 200px;
+    margin-top: 6rem;
+  }
+  .img-fluid {
+    width: 220px;
+    height: 150px;
+    margin-top: 8rem;
+    margin-right: 21rem;
+  }
+  .img-fluid :hover {
+    filter: blur(5px);
+  }
+  .subtitulo__sublogo {
+    width: 100%;
+    height: 100px;
+    margin-left: 0;
+  }
+  .subtitulo {
+    margin-top: 6rem;
+    justify-content: center;
+  }
+  .ruta {
+    width: 400px;
+    margin-bottom: 2rem;
+  }
+  .buscador {
+    font-size: 0.1rem;
+    margin-top: 1rem;
+  }
+  .lugar {
+    font-size: 1rem;
+  }
+  .inicio {
+    font-size: 1rem;
+  }
+  .entrega {
+    font-size: 1rem;
+  }
+  .inputLugar {
+    width: 300px;
+    height: 25px;
+  }
+  .inputInicio {
+    width: 300px;
+    height: 25px;
+  }
+  .inputEntrega {
+    width: 300px;
+    height: 25px;
+  }
+  .btn-info {
+    font-size: 10px;
+    width: 80px;
+  }
+  .tit {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fondo {
+    width: 350px;
+    height: 350px;
+    margin-left: -21rem;
+  }
+  .tituloFooter {
+    font-size: 2rem;
+    width: 100vh;
+    text-align: right;
+    margin-right: 36rem;
+  }
+  .parrafo {
+    width: 100vh;
+    font-size: 15px;
+    text-align: inherit;
+    justify-content: center;
+    margin-top: -2rem;
+    margin-right: 35rem;
+  }
+  .logoFinal {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 100px;
+    height: 90px;
+  }
+  .buttons {
+    width: 10px;
+    margin-left: -53em;
+  }
+  /*reserva*/
+}
+
+/* media query max600px*/
+@media screen and (max-width: 600px) {
+  .logoheader {
+    display: none;
+  }
+  .logo-principal {
+    width: 130px;
+    height: 90px;
+    position: relative;
+    margin-right: 8rem;
+  }
+  .sucursales {
+    display: none;
+  }
+  .whatsapp {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-right: -16rem;
+    margin-top: 1rem;
+  }
+  .subtitulo__sublogo {
+    display: none;
+  }
+  .car {
+    display: block;
+    width: 300px;
+    height: 200px;
+    margin-left: 2rem;
+  }
+  .subtitulo__texto {
+    font-size: 1.5rem;
+    width: 100vh;
+    margin-left: -20rem;
+    margin-top: 20rem;
+  }
+  .enlaces {
+    display: none;
+  }
+  .header {
+    height: 8rem;
+  }
+  .menu {
+    display: block;
+    font-size: 34px;
+    color: blue;
+    text-decoration: none;
+    margin-right: -5rem;
+    margin-top: 6rem;
+  }
+  .subtitulo__texto {
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: -6.5rem;
+    font-size: 0.9rem;
+  }
+  .img-fluid {
+    display: none;
+  }
+  .inputLugar {
+    width: 250px;
+    height: 25px;
+    margin: 1rem;
+    border-radius: 2px;
+  }
+  .inputInicio {
+    width: 250px;
+    height: 25px;
+    margin: 1rem;
+    border-radius: 2px;
+  }
+  .inputEntrega {
+    width: 250px;
+    height: 25px;
+    margin: 1rem;
+    border-radius: 2px;
+  }
+  .btnbuscar :hover {
+    color: #f1f1f1;
+    transition: .7s;
+  }
+  .tit {
+    width: 50%;
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .fondo {
+    width: 290px;
+    height: 400px;
+    margin-left: 9rem;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+  }
+  .tituloFooter {
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-right: -6rem;
+  }
+  .parrafo {
+    width: 500px;
+    font-size: 1rem;
+    margin-right: 5rem;
+    margin-top: -3rem;
+  }
+  .logoFinal {
+    margin-top: 1rem;
+    width: 140px;
+    height: 100px;
+  }
+  .buttons {
+    position: absolute;
+    width: 100px;
+    top: 40%;
+    left: 60%;
+  }
+  .enlaces__lista {
+    background-color: rgba(166, 166, 173, 0.952);
+    text-decoration: none;
+    flex-direction: column;
+  }
+  #central {
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(104, 105, 104, 0.15);
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    width: 53%;
+    height: 60vh;
+    margin-top: 8rem;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    transition: left 2s;
+  }
+  #central:target {
+    left: 0;
+  }
+  .jam-close {
+    display: block;
+  }
+  /*reserva*/
+  .logo__prin {
+    width: 130px;
+    height: 90px;
+    position: relative;
+    margin-right: 8rem;
+  }
+  .img-fluid- {
+    display: block;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    width: 500px;
+    height: 150px;
+  }
+  .btn-primary {
+    width: 100px;
+    margin-left: 1rem;
+  }
+  .subtituloReserva {
+    font-size: 1.5rem;
+    margin-top: 12rem;
+    margin-right: -15rem;
+  }
+  .reserva {
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,47 @@
+header{
+   
+    
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.logoheader{
+    margin-bottom: 8px;
+    width: 3000px;
+    height: 300px;
+   
+
+  align-items: baseline;
+
+    
+    
+}
+.logo-principal{
+    width: 300px;
+    height: 200px;
+
+}
+
+.nav_whatsapp{
+    
+    width: 60px ;    
+    height: 60px;
+    position: absolute;  
+    right: 280px;
+    top: 25px;
+    
+}
+.nav_sucursales{
+    position: absolute;
+    font-size: 1.8rem;
+    background-color: rgb(0, 200, 250);
+    color: white;
+    display: inline-block;
+    
+    right: 140px;
+    top: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    
+    
+}
