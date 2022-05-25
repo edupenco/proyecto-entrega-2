@@ -11,10 +11,10 @@
         position:relative;
         margin-right:8rem;
     }
-    .sucursales{
+    .nav_sucursales{
         display: none;
     }
-    .whatsapp{
+    .nav_whatsapp{
         width: 50px;
         height: 50px;
         position: absolute;
@@ -59,7 +59,7 @@
         margin-top:2rem;
         text-align: center;
         margin-left: -6.5rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .img-fluid{
         display: none;
@@ -119,10 +119,11 @@
     }
     
     .logoFinal{
-        
+        margin-right: 3rem;
         margin-top: 1rem;
-        width: 140px;
+        width: 120px;
     height: 100px
+    
     }
     .buttons{
         position: absolute;

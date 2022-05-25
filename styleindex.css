@@ -32,15 +32,15 @@ header{
 
 }
 
-.whatsapp{
+ .whatsapp{
     display: flex;
     width: 60px ;    
     height: 60px;
     position: absolute;  
     right: 280px;
-    top: 25px;
+    top: 25px; 
     
-}
+} 
 .sucursales{
     position: absolute;
     font-size: 1.8rem;
@@ -56,7 +56,7 @@ header{
     
 }
 
-.enlaces__lista {
+/* .enlaces__lista {
     margin-top: 2px;
     padding: 30px;
     border: 10px;
@@ -75,7 +75,7 @@ header{
 .enlaces__lista a:hover{ 
     color: white; 
     transition: .7s;
-}
+} */
 /* .jam-close{
     display: none;
 } */
@@ -437,11 +437,11 @@ header{
         margin-right: 9rem;
         margin-top: -0.5rem;
     }
-    .enlaces{
+    /* .enlaces{
         width: 435px;
-        height: 2px;
+        /* height: 2px; */
         
-    }
+    } */
 
    .enlaces__lista a{
        display: block;
@@ -465,13 +465,13 @@ header{
         filter: blur(5px);
     }
 
-    .subtitulo__sublogo{
+    /* .subtitulo__sublogo{
         width: 450px;
         height: 90px;
         margin-left: -10rem;
         margin-bottom: -2rem;
         margin-top: -15px;
-    }
+    } */
     
     .subtitulo{
         margin-top: 6rem;
@@ -551,7 +551,7 @@ header{
 
     
     
-}
+
 
 
 
@@ -574,13 +574,13 @@ header{
     .sucursales{
         display: none;
     }
-    .whatsapp{
+    /* .whatsapp{
         width: 50px;
         height: 50px;
         position: absolute;
         margin-right: -16rem;
         margin-top: 1rem;
-    }
+    } */
     .subtitulo__sublogo{
         display: none;
     }
@@ -719,33 +719,7 @@ header{
 
         /*reserva*/
 
-        .logo__prin{
-            width: 130px;
-        height: 90px;
-        position:relative;
-        margin-right:8rem;
-        }
-
-        .img-fluid-{
-            display: block;
-            margin-top: 2rem;
-            margin-right: 2rem;
-            width: 500px;
-            height: 150px;
-        }
-        .btn-primary{
-            width: 100px;
-            margin-left: 1rem;
-        }
-        .subtituloReserva{
-            
-            font-size: 1.5rem;
-            margin-top: 12rem;
-            margin-right: -15rem;
-        }
-        .reserva{
-            margin-top: 1rem;
-        }
+        
 } 
         
         
