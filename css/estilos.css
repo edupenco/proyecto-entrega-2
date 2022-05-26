@@ -367,37 +367,41 @@ footer {
 .titulogmbaja {
   margin-top: 3rem;
   font-family: Verdana;
-  font-size: 2rem;
+  font-size: 3rem;
   color: blue;
+  text-align: center;
 }
 
 .gmbaja {
   margin-top: 2rem;
-  display: flex;
+  font-size: 1.5rem;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
-  text-align: center;
+  align-items: center;
+}
+
+.gamabaja {
+  margin-left: 25%;
 }
 
 .titulogmmedia {
   margin-top: 3rem;
   font-family: Verdana;
-  font-size: 2rem;
+  font-size: 3rem;
   color: blue;
+  text-align: center;
 }
 
 .gmmedia {
-  margin-top: 2rem;
-  display: flex;
+  margin-top: rem;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  text-align: center;
+  font-size: 1.5rem;
+  align-items: center;
 }
 
 .gamamedia {
   margin-bottom: 4rem;
+  margin-left: 25%;
 }
 
 .tituloclub {
@@ -771,15 +775,23 @@ footer {
 }
 
 .auto-alquiler h2 {
-  color: blue;
   text-align: center;
+  padding: 10px;
+  color: blue;
   font-size: 2rem;
-  padding: 20px;
 }
 
 .auto-alquiler p {
+  text-align: center;
   padding: 10px;
   color: blue;
-  text-align: center;
+}
+
+.img {
+  width: 100%;
+}
+
+body {
+  background-color: #cecbcb;
 }
 /*# sourceMappingURL=estilos.css.map */
