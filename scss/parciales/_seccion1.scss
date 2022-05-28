@@ -1,136 +1,129 @@
-.subtitulo{
-    display: flex;
-    
-   text-align: center;
+.subtitulo {
+  display: flex;
+
+  text-align: center;
 }
-.car{
-    display: none;
+.car {
+  display: none;
 }
 
-.subtitulo__sublogo{
-     height: 195px;
-     position: absolute;
-     
-
+.subtitulo__sublogo {
+  height: 195px;
+  position: absolute;
 }
-.subtitulo__texto{
-    position:relative;
-    
-    color: rgb(13, 13, 221);
-    text-align: center;
-    font-size: 2rem;
-   margin-top: 15rem;
-   margin-bottom: 4rem
-   
-} 
-div{
-    &.buscador{   
-            $color-busqueda:blue;
-            $backcol: #00c8fa6c;
-            font-size: 1rem;
-            margin: 1rem;
-            width: 220px;
-            // height: 35px;
-            margin: 1rem;
-            
-            
-        h3{
-            &.buscador-lugar {
-                border-radius: 8px;
-                color: $color-busqueda;
-                background-color: $backcol;
-                }
-                &.buscador-inicio{
-                    border-radius: 8px;
-                    color: $color-busqueda;
-                    background-color: $backcol;
-                }
-                 &.buscador-entrega{
-                    border-radius: 8px;
-                    color: $color-busqueda;
-                    background-color: $backcol;
-                }
-             }
-        }
-     }
+.subtitulo__texto {
+  position: relative;
 
-.img-fluid{
-    
-    width: 100px;
-    height: 300px;
-    float: right;
-    margin-top: 15rem;
-    margin-right: 2rem;
-    transition:all .5s ease-in-out;
+  color: rgb(13, 13, 221);
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
+}
+div {
+  &.buscador {
+    $color-busqueda: blue;
+    $backcol: #00c8fa6c;
+    font-size: 1rem;
+    margin: 1rem;
+    width: 220px;
+    // height: 35px;
+    margin: 1rem;
+
+    h3 {
+      &.buscador-lugar {
+        border-radius: 8px;
+        color: $color-busqueda;
+        background-color: $backcol;
+      }
+      &.buscador-inicio {
+        border-radius: 8px;
+        color: $color-busqueda;
+        background-color: $backcol;
+      }
+      &.buscador-entrega {
+        border-radius: 8px;
+        color: $color-busqueda;
+        background-color: $backcol;
+      }
+    }
+  }
+}
+
+.img-fluid {
+  width: 100px;
+  height: 300px;
+  float: right;
+
+  transition: all 0.5s ease-in-out;
 }
 
 .img-fluid:hover {
-    filter: blur(2px);
+  filter: blur(2px);
 }
 .img-thumbnail {
-    width: 450px;
+  width: 450px;
 }
-.btn-primary{
-    width: 70px;
-}
-
-
-
-
-.lugar{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    // color: blue;
-    // background-color: rgba(0, 200, 250, 25%);
-    border-radius: 8px;
-    
-    text-decoration: none;
-}
-.inputLugar{
-    width: 500px;
-    height: 35px;
-    margin: 1rem;
-}
-.inicio{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    // color: blue;
-    // background-color: rgba(0, 200, 250, 25%);
-    border-radius: 8px;
-    text-decoration: none;
-}
-.inputInicio{
-    width: 500px;
-    height: 35px;
-    margin: 1rem;
-}
-.entrega{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: blue;
-    background-color: rgba(0, 200, 250, 25%);
-    border-radius: 8px;
-    text-decoration: none;
-}
-.inputEntrega{
-    width: 500px;
-    height: 35px;
-    margin: 1rem;
+.btn-primary {
+  width: 80px;
 }
 
-.btn-info{
-    font-weight: bold;
-    color:blue;
-    background-color: rgba(0, 200, 250, 25%);
+.lugar {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  // color: blue;
+  // background-color: rgba(0, 200, 250, 25%);
+  border-radius: 8px;
+
+  text-decoration: none;
+}
+.inputLugar {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+.inicio {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  // color: blue;
+  // background-color: rgba(0, 200, 250, 25%);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.inputInicio {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+.entrega {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: blue;
+  background-color: rgba(0, 200, 250, 25%);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.inputEntrega {
+  width: 500px;
+  height: 35px;
+  margin: 1rem;
+}
+
+.btn-info {
+  font-weight: bold;
+  color: blue;
+  background-color: rgba(0, 200, 250, 25%);
 }
 .btn-buscar {
-    font-size: 1.5rem;
-    width: 100px;
-    margin-left: 1rem;
-    font-weight: bold;
-    color: blue;
-    background-color: rgba(0, 200, 250, 25%);
-    
+  font-size: 1.5rem;
+  width: 100px;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: blue;
+  background-color: rgba(0, 200, 250, 25%);
 }
-.jam-close{
-    display: none;
+.jam-close {
+  display: none;
 }
 /* .btnbuscar{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -140,4 +133,85 @@ div{
     color: blue;
 } */
 
+.container__form-and-img {
+  padding: 5rem 2rem;
+  width: 100%;
+  display: flex;
+}
+.container__form {
+  width: 100%;
+}
 
+.container__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+ul {
+  padding: none !important;
+  margin: 0 !important;
+}
+
+.banner {
+  width: 100%;
+}
+
+.container__form-and-img {
+  padding: 5rem 2rem;
+  width: 100%;
+  display: flex;
+}
+
+.container__form {
+  width: 100%;
+}
+
+.container__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+$color: #00C8FA;
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #000000;
+    padding: 2rem 1rem;
+    font-weight: bold;
+    cursor: default;
+    span {
+      background-image: linear-gradient(
+        transparent calc(65% - 5px),
+        darken($color, 0%) 5px
+      );
+      background-size: 0;
+      background-repeat: no-repeat;
+      display: inline;
+      transition: 0.5s ease;
+    }
+  
+    &:hover {
+      span {
+        background-size: 100%;
+      }
+    }
+  }

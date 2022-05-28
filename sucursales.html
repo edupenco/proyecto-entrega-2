@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Alquila tu auto con Blue Rent a car al mejor precio del mercado ">
     <meta name="keywords" content="RentCar, Aqluiler, Autos, Blue">
-    <title>Sucursales</title>
+    <link rel="shortcut icon" href="./imagenes/logot.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styleindex.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Blue Alquiler de Autos | Sucursales</title>
 </head>
 
 <body>
-    <header>
-        
-        <img src="./imagenes/header..jpg" class="logoheader" alt="logo header">
-        
-        <a href="./index.html"  class="logo-principal" >
-            <img src="./imagenes/logot.png" alt="Logotipo Blue">
-        </a>
-            <nav>
-                 <a href="https://api.whatsapp.com/send?phone=541166655500" class="whatsapp" target="blank" >
-                  <img src="./imagenes/whatsapp.png" alt="whatsapp">   
-                 </a>
-            </nav>
-            <a href="sucursales.html" class="sucursales" >Sucursales</a>
+    <header class="header">
+        <div class="header-container-img">
+            <a href="./index.html">
+                <img src="./imagenes/header-2.jpg" class="logoheader" alt="logo header">
+            </a>
+            <div class="header-logo">
+                <img src="./imagenes/logo-modif.png" class="logo-principal" alt="Logotipo Blue">
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <a href="#central" class="menu">
+                <span class="jam jam-menu"></span>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="https://api.whatsapp.com/send?phone=541166655500" class="nav_whatsapp" target="blank">
+                <img src="./imagenes/whatsapp.png" alt="whatsapp">
+            </a>
+        </nav>
+        <a href="sucursales.html" class="nav_sucursales">Sucursales</a>
+
     </header>
-  <div></div>
+
+    <nav class="enlaces" id="central">
+        <ul class="enlaces__lista">
+            <li>
+                <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="./reservas.html">Reservas</a>
+            </li>
+            <li>
+                <a href="./ofertasespeciales.html">Ofertas Especiales</a>
+            </li>
+            <li>
+                <a href="./vehiculos.html">Vehiculos</a>
+            </li>
+            <li>
+                <a href="./clubblue.html">Club Blue</a>
+            </li>
+            <li>
+                <a href="#" class="nav-sucursal-mobile">Sucursales</a>
+            </li>
+            <li>
+                <a class="enlaces__#" href="#"><span class="jam jam-close"> </span></a>
+            </li>
+        </ul>
+    </nav>
     <h1 class="titulosucursales">Aqui podras encontrar todas nuestras sucursales.Busca la mas cerca de tu domicilio</h1>
     <ul class="lista--sucursales">
         <li>Buenos Aires – La Plata
             Av. 44 2346, La Plata, B1900</li>
         <li>Córdoba - Aeropuerto
             Av. La Voz Del Interior 8500, Córdoba</li>
-            <li>Mar Del Plata – Centro
-                Córdoba 2149, Mar Del Plata, B7600</li>
-                <li>Buenos Aires – Ezeiza
-                    AU Tte. Gral. Pablo Riccheri Km 33,5, Ezeiza</li>
+        <li>Mar Del Plata – Centro
+            Córdoba 2149, Mar Del Plata, B7600</li>
+        <li>Buenos Aires – Ezeiza
+            AU Tte. Gral. Pablo Riccheri Km 33,5, Ezeiza</li>
     </ul>
-</div>
+    </div>
     <footer>
-        
-        <img src="./imagenes/logopng.png" class="logoFinal"  alt="Logotipo Blue">
-       <div class="buttons">
-           <a href="https://facebook.com/bluealquilerdeautos" class="fa fa-facebook" target="blank" ></a>
-           <a href="https://instagram.com/bluealquilerdeautos" class="fa fa-instagram" target="blank"></a>
-       </div>
+
+        <img src="./imagenes/logopng.png" class="logoFinal" alt="Logotipo Blue">
+        <div class="buttons">
+            <a href="https://facebook.com/bluealquilerdeautos" class="fa fa-facebook" target="blank"></a>
+            <a href="https://instagram.com/bluealquilerdeautos" class="fa fa-instagram" target="blank"></a>
+        </div>
     </footer>
-    
+
 </body>
+
 </html>

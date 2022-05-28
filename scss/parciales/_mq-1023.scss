@@ -5,14 +5,11 @@
     .logo-principal{
         width:250px ;
         height: 140px;
-        margin-top: 1rem;
+        
     }
     .logoheader{
-        
-        flex-direction: row-reverse;
-        width: 500px;
+        width: 100vw;
         height: 200px;
-        margin-right: 0rem;
     }
     .nav_sucursales{
        
@@ -146,7 +143,7 @@
     }
     
     .reserva{
-        margin-top: 10px;
+        
         
     }
     .logo__prin{
@@ -157,7 +154,7 @@
     .logoheader{
         
         flex-direction: row-reverse;
-        width: 500px;
+
         height: 200px;
         margin-right: 0rem;
     }
@@ -170,5 +167,9 @@
         flex-direction: row;
         justify-content: flex-start;
         margin-right: 5rem;
+    }
+
+    .nav-sucursal-mobile {
+        display: none;
     }
 }

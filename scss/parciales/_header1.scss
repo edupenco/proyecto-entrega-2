@@ -1,29 +1,25 @@
 header{
-   
-    
     display: flex;
-    flex-direction: row-reverse;
-    
+   // background-color: red;
 }
+
+.nav-sucursal-mobile {
+    display: none;
+}
+
 .logoheader{
-    margin-bottom: 8px;
-    width: 3000px;
+    width: 100vw;
+    object-fit: cover;
     height: 300px;
-   
-
-  align-items: baseline;
-
-    
-    
+//   align-items: baseline; 
 }
 .logo-principal{
     width: 300px;
     height: 200px;
-
+    
 }
 
 .nav_whatsapp{
-    
     width: 60px ;    
     height: 60px;
     position: absolute;  
@@ -44,4 +40,14 @@ header{
     text-decoration: none;
     
     
+}
+
+.header-container-img {
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 18%;
+    left: 5%;
 }
