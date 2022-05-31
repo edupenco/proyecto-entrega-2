@@ -1,9 +1,21 @@
+@mixin mixin-vehiculos ($margin-top, $font-family, $font-size, $color: blue) {
+    margin-top: $margin-top;
+    font-family: $font-family;
+    font-size:$font-size;
+    color: $color;   
+    }
+
+
+
+
+
 .titulogmbaja{
-    margin-top: 3rem;
-    font-family: Verdana;
-    font-size: 2rem;
-    color: blue;
-}
+    @include mixin-vehiculos(3rem, Verdana, 2rem, );
+//     margin-top: 3rem;
+//     font-family: Verdana;
+//     font-size: 2rem;
+//     color: blue;
+ }
 .gmbaja{
     margin-top: 2rem;
     display: flex;
@@ -13,10 +25,11 @@
     text-align: center;
 }
 .titulogmmedia{
-    margin-top: 3rem;    
-    font-family: Verdana;
-    font-size: 2rem;
-    color: blue;
+    @include mixin-vehiculos(3rem, Verdana, 2rem, );
+    // margin-top: 3rem;    
+    // font-family: Verdana;
+    // font-size: 2rem;
+    // color: blue;
 }
 .gmmedia{
     margin-top: 2rem;
