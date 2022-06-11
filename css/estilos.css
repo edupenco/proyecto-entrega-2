@@ -518,10 +518,14 @@ footer {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-weight: bold;
   color: blue;
 }
 
 .lista--sucursales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 3rem;
   font-size: 1.5rem;
 }
@@ -740,9 +744,8 @@ body {
   .menu {
     display: block;
     font-size: 60px;
-    color: #cecbcb;
+    color: #e3eee4;
     text-decoration: none;
-    width: 100%;
   }
   .subtitulo__texto {
     margin-top: 2rem;
