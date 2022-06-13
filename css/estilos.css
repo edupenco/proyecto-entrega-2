@@ -795,6 +795,7 @@ body {
   footer {
     position: relative;
     width: 100%;
+    right: 2rem;
   }
   .tituloFooter {
     font-size: 1.5rem;
@@ -895,6 +896,12 @@ body {
   }
   .nav-sucursal-mobile {
     display: block;
+  }
+  .gamabaja {
+    width: 80%;
+  }
+  .gamamedia {
+    width: 80%;
   }
 }
 
