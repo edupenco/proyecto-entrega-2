@@ -1,5 +1,7 @@
-function cotizadorAlquiler(){
+
 let gamaAuto= prompt("seleccione que gama del vehiculo que  desea alquilar, Gama baja escriba A, gama media escriba B").toLowerCase();
+function cotizadorAlquiler(){
+
 let valorBaja=3450;
 let valorMedia=4800;
 if (gamaAuto == "a" || gamaAuto== "b"){
@@ -50,7 +52,38 @@ gamaMedia.push (new Gama ("2", "Aerop.cordoba", "focus"));
 gamaMedia.push (new Gama ("2", "mdq", "focus"));
 gamaMedia.push (new Gama ("3", "aerop.eze", "focus"));
 
-if (gamaAuto == "b"){
+const gamaBaja= [];
+gamaBaja.push (new Gama ("1", "La Plata", "etios"));
+gamaBaja.push (new Gama ("3", "Aerop.cordoba", "etios"));
+gamaBaja.push (new Gama ("2", "mdq", "etios"));
+gamaBaja.push (new Gama ("3", "aerop.eze", "etios"));
+gamaBaja.push (new Gama ("3", "La Plata", "cronos"));
+gamaBaja.push (new Gama ("4", "Aerop.cordoba", "cronos"));
+gamaBaja.push (new Gama ("2", "mdq", "cronos"));
+gamaBaja.push (new Gama ("3", "aerop.eze", "cronos"));
+gamaBaja.push (new Gama ("1", "La Plata", "kwid"));
+gamaBaja.push (new Gama ("2", "Aerop.cordoba", "kwid"));
+gamaBaja.push (new Gama ("1", "mdq", "kwid"));
+gamaBaja.push (new Gama ("1", "aerop.eze", "kwid"));
+gamaBaja.push (new Gama ("2", "La Plata", "gol trend"));
+gamaBaja.push (new Gama ("4", "Aerop.cordoba", "gol trend"));
+gamaBaja.push (new Gama ("3", "mdq", "gol trend"));
+gamaBaja.push (new Gama ("4", "aerop.eze", "gol trend"));
+
+if (gamaAuto == "a"){
+    const modelo = gamaBaja.map ((el) => el.modelo)
+    const mod = [];
+    modelo.forEach( (element) => {
+        if ( !mod.includes (element)) {
+            mod.push (element);
+        }
+    })
+
+
+console.log(`Usted puede elgir entre estos modelos:  ${mod}`);
+}
+
+else if  (gamaAuto == "b"){
     const modelo = gamaMedia.map ((el) => el.modelo)
     const model = [];
     modelo.forEach( (elemento) => {
