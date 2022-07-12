@@ -35,40 +35,40 @@ class Gama {
     }
 }
 const gamaMedia= [];
-gamaMedia.push (new Gama ("1", "La Plata", "cruze"));
-gamaMedia.push (new Gama ("1", "Aerop.cordoba", "cruze"));
-gamaMedia.push (new Gama ("1", "mdq", "cruze"));
-gamaMedia.push (new Gama ("2", "aerop.eze", "cruze"));
-gamaMedia.push (new Gama ("1", "La Plata", "sentra"));
-gamaMedia.push (new Gama ("1", "Aerop.cordoba", "sentra"));
-gamaMedia.push (new Gama ("2", "mdq", "sentra"));
-gamaMedia.push (new Gama ("2", "aerop.eze", "sentra"));
-gamaMedia.push (new Gama ("1", "La Plata", "golf"));
-gamaMedia.push (new Gama ("2", "Aerop.cordoba", "golf"));
-gamaMedia.push (new Gama ("1", "mdq", "golf"));
-gamaMedia.push (new Gama ("1", "aerop.eze", "golf"));
-gamaMedia.push (new Gama ("0", "La Plata", "focus"));
-gamaMedia.push (new Gama ("2", "Aerop.cordoba", "focus"));
-gamaMedia.push (new Gama ("2", "mdq", "focus"));
-gamaMedia.push (new Gama ("3", "aerop.eze", "focus"));
+gamaMedia.push (new Gama ("1", "La Plata", "Chevrolet Cruze"));
+gamaMedia.push (new Gama ("1", "Aerop.cordoba", "Chevrolet Cruze"));
+gamaMedia.push (new Gama ("1", "mdq", "cChevrolet Cruze"));
+gamaMedia.push (new Gama ("2", "aerop.eze", "Chevrolet Cruze"));
+gamaMedia.push (new Gama ("1", "La Plata", "Nissan Sentra"));
+gamaMedia.push (new Gama ("1", "Aerop.cordoba", "Nissan Sentra"));
+gamaMedia.push (new Gama ("2", "mdq", "Nissan Sentra"));
+gamaMedia.push (new Gama ("2", "aerop.eze", "Nissan Sentra"));
+gamaMedia.push (new Gama ("1", "La Plata", "VW Golf"));
+gamaMedia.push (new Gama ("2", "Aerop.cordoba", "VW Golf"));
+gamaMedia.push (new Gama ("1", "mdq", "VW Golf"));
+gamaMedia.push (new Gama ("1", "aerop.eze", "VW Golf"));
+gamaMedia.push (new Gama ("0", "La Plata", "Ford Focus"));
+gamaMedia.push (new Gama ("2", "Aerop.cordoba", "Ford Focus"));
+gamaMedia.push (new Gama ("2", "mdq", "Ford Focus"));
+gamaMedia.push (new Gama ("3", "aerop.eze", "Ford Focus"));
 
 const gamaBaja= [];
-gamaBaja.push (new Gama ("1", "La Plata", "etios"));
-gamaBaja.push (new Gama ("3", "Aerop.cordoba", "etios"));
-gamaBaja.push (new Gama ("2", "mdq", "etios"));
-gamaBaja.push (new Gama ("3", "aerop.eze", "etios"));
-gamaBaja.push (new Gama ("3", "La Plata", "cronos"));
-gamaBaja.push (new Gama ("4", "Aerop.cordoba", "cronos"));
-gamaBaja.push (new Gama ("2", "mdq", "cronos"));
-gamaBaja.push (new Gama ("3", "aerop.eze", "cronos"));
-gamaBaja.push (new Gama ("1", "La Plata", "kwid"));
-gamaBaja.push (new Gama ("2", "Aerop.cordoba", "kwid"));
-gamaBaja.push (new Gama ("1", "mdq", "kwid"));
-gamaBaja.push (new Gama ("1", "aerop.eze", "kwid"));
-gamaBaja.push (new Gama ("2", "La Plata", "gol trend"));
-gamaBaja.push (new Gama ("4", "Aerop.cordoba", "gol trend"));
-gamaBaja.push (new Gama ("3", "mdq", "gol trend"));
-gamaBaja.push (new Gama ("4", "aerop.eze", "gol trend"));
+gamaBaja.push (new Gama ("1", "La Plata", "Toyota Etios"));
+gamaBaja.push (new Gama ("3", "Aerop.cordoba", "Toyota Etios"));
+gamaBaja.push (new Gama ("2", "mdq", "eToyota Etios"));
+gamaBaja.push (new Gama ("3", "aerop.eze", "Toyota Etios"));
+gamaBaja.push (new Gama ("3", "La Plata", "Fiat Cronos"));
+gamaBaja.push (new Gama ("4", "Aerop.cordoba", "Fiat Cronos"));
+gamaBaja.push (new Gama ("2", "mdq", "Fiat Cronos"));
+gamaBaja.push (new Gama ("3", "aerop.eze", "Fiat Cronos"));
+gamaBaja.push (new Gama ("1", "La Plata", "Renault Kwid"));
+gamaBaja.push (new Gama ("2", "Aerop.cordoba", "Renault Kwid"));
+gamaBaja.push (new Gama ("1", "mdq", "Renault Kwid"));
+gamaBaja.push (new Gama ("1", "aerop.eze", "Renault Kwid"));
+gamaBaja.push (new Gama ("2", "La Plata", "Vw Gol trend"));
+gamaBaja.push (new Gama ("4", "Aerop.cordoba", "Vw Gol trend"));
+gamaBaja.push (new Gama ("3", "mdq", "Vw Gol trend"));
+gamaBaja.push (new Gama ("4", "aerop.eze", "Vw Gol trend"));
 
 if (gamaAuto == "a"){
     const modelo = gamaBaja.map ((el) => el.modelo)
