@@ -115,6 +115,8 @@ function sacarRepetidos(array){
 }
 
 
+
+
 let boton= document.getElementById("btn")
 console.log (boton)
 boton.addEventListener("click",(e) =>{
@@ -123,5 +125,6 @@ boton.addEventListener("click",(e) =>{
     alert("Estamos buscando las mejores opciones de alquiler")
 })
   
-
+let fecha= document.getElementById("fechaInicio")
+fecha.value
     
