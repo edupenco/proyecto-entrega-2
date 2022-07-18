@@ -1,4 +1,4 @@
-const lugar=document.getElementById("lugar")
+
 
 let gamaAuto= prompt("seleccione que gama del vehiculo que  desea alquilar, Gama baja escriba A, gama media escriba B").toLowerCase();
 function cotizadorAlquiler(){
@@ -96,6 +96,7 @@ else if  (gamaAuto == "b"){
 console.log(`Usted puede elgir entre estos modelos:  ${model}`);
 }
 
+const lugar=document.getElementById("lugar")
 const gamaBajaUbicacion= sacarRepetidos(gamaBaja)
 gamaBajaUbicacion.map(elemento =>{
    // console.log(elemento)  
