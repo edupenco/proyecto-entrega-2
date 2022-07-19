@@ -115,17 +115,23 @@ function sacarRepetidos(array){
     return ubi
 }
 
+let autoAlquiler=document.getElementById("autoAlquiler")
+autoAlquiler.innerHTML="<h2>Alquila con confianza en Blue</h2><p>Con más de 30 años en el mercado, somos líderes en alquiler de autos. Miles de personas en Argentina yturistas de todo el mundo nos eligen diariamente para disfrutar sus viajes en la comodidad y confort de nuestros vehículos. No conozcas tu destino, recorrelo. Alquilá un auto con nosotros para poder disfrutar mucho más en tu viaje. Lo importante es disfrutar el camino.</p>";
 
 
-
-let boton= document.getElementById("btn")
-console.log (boton)
-boton.addEventListener("click",(e) =>{
-    e.preventDefault()  
-  
-    alert("Estamos buscando las mejores opciones de alquiler")
-})
-  
-let fecha= document.getElementById("fechaInicio")
-fecha.value
+let boton = document.getElementById("btn");
+const fecha = document.getElementById("fechaInicio");
+const devolucion = document.getElementById("fechaDevolucion");
+console.log(boton);
+boton.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(lugar.value);
+  console.log(fecha.value);
+  console.log(devolucion.value);
+  if (lugar.value !== "" && fecha.value !== "" && devolucion.value !== "") {
+    alert(`El lugar de entrega sera en ${lugar.value} el dia  ${fecha.value} y debera ser devuelto el dia ${devolucion.value}`);
+  } else {
+    alert(`Completa los campos`);
+  }
+});
     
