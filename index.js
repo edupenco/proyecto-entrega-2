@@ -1,21 +1,28 @@
-
-
-let gamaAuto= prompt("seleccione que gama del vehiculo que  desea alquilar, Gama baja escriba A, gama media escriba B").toLowerCase();
+let boton = document.getElementById("btn");
+let botonPresupuesto=document.getElementById("butt")
+let gamaAuto
+if(boton){
+     gamaAuto= prompt("seleccione que gama del vehiculo que  desea alquilar, Gama baja escriba A, gama media escriba B").toLowerCase();
+     localStorage.setItem("gamaAuto", gamaAuto)
+}
 function cotizadorAlquiler(){
-
+ let diasAlquiler;
 let valorBaja=3450;
 let valorMedia=4800;
-if (gamaAuto == "a" || gamaAuto== "b"){
-    let diasAlquiler = Number  (prompt("cuantos dias quiere alquilar el vehiculo:"));
+if (localStorage.getItem("gamaAuto") == "a" || localStorage.getItem("gamaAuto")== "b"){
+    if(boton){
+         diasAlquiler = Number  (prompt("cuantos dias quiere alquilar el vehiculo:"));
+         localStorage.setItem("diasAlquiler", diasAlquiler)
+    }
 
-        if (gamaAuto =="a"){
+        if (localStorage.getItem("gamaAuto") =="a"){
             
-        let resultado=  (valorBaja * diasAlquiler);
-        alert(`El valor del alquiler de un vehiculo gama baja por ${diasAlquiler} dias(s) es: ${resultado}$`);
+        let resultado=  (valorBaja * localStorage.getItem("diasAlquiler"));
+        alert(`El valor del alquiler de un vehiculo gama baja por ${localStorage.getItem("diasAlquiler")} dias(s) es: ${resultado}$`);
         }
-        else if(gamaAuto == "b"){
-            let resultado=  (valorMedia * diasAlquiler);
-            alert(`El valor del alquiler de un vehiculo gama media por ${diasAlquiler} dias(s) es: ${resultado}$`);;
+        else if(localStorage.getItem("gamaAuto")== "b"){
+            let resultado=  (valorMedia * localStorage.getItem("diasAlquiler"));
+            alert(`El valor del alquiler de un vehiculo gama media por ${localStorage.getItem("diasAlquiler")} dias(s) es: ${resultado}$`);;
         }
 }
      else  {
@@ -98,12 +105,14 @@ console.log(`Usted puede elgir entre estos modelos:  ${model}`);
 
 const lugar=document.getElementById("lugar")
 const gamaBajaUbicacion= sacarRepetidos(gamaBaja)
+if(boton){
 gamaBajaUbicacion.map(elemento =>{
    // console.log(elemento)  
 
     lugar.innerHTML +=`<option>${elemento}</option>`;
 
 })
+}
 function sacarRepetidos(array){
     const ubicacion = array.map ((el) => el.ubicacion)
     const ubi = [];
@@ -115,23 +124,57 @@ function sacarRepetidos(array){
     return ubi
 }
 
-let autoAlquiler=document.getElementById("autoAlquiler")
-autoAlquiler.innerHTML="<h2>Alquila con confianza en Blue</h2><p>Con más de 30 años en el mercado, somos líderes en alquiler de autos. Miles de personas en Argentina yturistas de todo el mundo nos eligen diariamente para disfrutar sus viajes en la comodidad y confort de nuestros vehículos. No conozcas tu destino, recorrelo. Alquilá un auto con nosotros para poder disfrutar mucho más en tu viaje. Lo importante es disfrutar el camino.</p>";
+//let autoAlquiler=document.getElementById("autoAlquiler")
+//autoAlquiler.innerHTML="<h2>Alquila con confianza en Blue</h2><p>Con más de 30 años en el mercado, somos líderes en alquiler de autos. Miles de personas en Argentina yturistas de todo el mundo nos eligen diariamente para disfrutar sus viajes en la comodidad y confort de nuestros vehículos. No conozcas tu destino, recorrelo. Alquilá un auto con nosotros para poder disfrutar mucho más en tu viaje. Lo importante es disfrutar el camino.</p>";
+
+ 
 
 
-let boton = document.getElementById("btn");
+
 const fecha = document.getElementById("fechaInicio");
 const devolucion = document.getElementById("fechaDevolucion");
 console.log(boton);
-boton.addEventListener("click", (e) => {
-  e.preventDefault();
-  console.log(lugar.value);
-  console.log(fecha.value);
-  console.log(devolucion.value);
-  if (lugar.value !== "" && fecha.value !== "" && devolucion.value !== "") {
-    alert(`El lugar de entrega sera en ${lugar.value} el dia  ${fecha.value} y debera ser devuelto el dia ${devolucion.value}`);
-  } else {
-    alert(`Completa los campos`);
-  }
-});
+if(boton){
+    boton.addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(lugar.value);
+        console.log(fecha.value);
+        console.log(devolucion.value);
+        localStorage.setItem("lugar", lugar.value)
+        localStorage.setItem("fecha", fecha.value)
+        localStorage.setItem("devolucion", devolucion.value)
+        if (lugar.value !== "" && fecha.value !== "" && devolucion.value !== "") {
+          window.location.href= "http://127.0.0.1:5500/presupuesto.html"
+            //alert(`El lugar de entrega sera en ${lugar.value} el dia  ${fecha.value} y debera ser devuelto el dia ${devolucion.value}`);
+        } else {
+         // alert(`Completa los campos`);
+        }
+      });
+      
+}
+let presupuesto=document.getElementById("presupuesto")
+
+   if(presupuesto){
+    let gamaAutoText
+    if(localStorage.getItem("gamaAuto")==="a"){
+        gamaAutoText="baja"
+    }
+    if(localStorage.getItem("gamaAuto")==="b"){
+        gamaAutoText="media"
+    }
+//calcular diferencia de fecha
+
+    let inicio=new Date (localStorage.getItem("fecha")).getTime()
+    let devolucion=new Date(localStorage.getItem("devolucion")).getTime()
+    let dif= devolucion - inicio
+    let diff= dif/(24*60*60*1000)
+    console.log(diff)
+
+    presupuesto.innerHTML +=`<p>El lugar de entrega sera en ${localStorage.getItem("lugar")} el dia  ${localStorage.getItem("fecha")} y debera ser devuelto el dia ${localStorage.getItem("devolucion")}</p>`
+    //presupuesto.innerHTML +=`<p>El modelo que eligio es de gama ${gamaAutoText.toUpperCase()} por ${localStorage.getItem("diasAlquiler")} dia(s)</p>`
+    presupuesto.innerHTML+=`<p>los dias seleccionados son ${diff}</p>`
+
     
+   }
+
+
