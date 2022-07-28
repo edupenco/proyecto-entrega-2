@@ -1,36 +1,57 @@
 let boton = document.getElementById("btn");
 let botonPresupuesto=document.getElementById("butt")
 let gamaAuto
-if(boton){
+
+
+
+
+
+if(botonPresupuesto){
+    botonPresupuesto.addEventListener("click", (e) => {
      gamaAuto= prompt("seleccione que gama del vehiculo que  desea alquilar, Gama baja escriba A, gama media escriba B").toLowerCase();
      localStorage.setItem("gamaAuto", gamaAuto)
-}
-function cotizadorAlquiler(){
- let diasAlquiler;
+
+//calcular diferencia de fecha
+
+let inicio=new Date (localStorage.getItem("fecha")).getTime()
+let devolucion=new Date(localStorage.getItem("devolucion")).getTime()
+let dif= devolucion - inicio
+let diff= dif/(24*60*60*1000)
+console.log(diff)
+localStorage.setItem("diff", diff)
+
+ 
+if (localStorage.getItem("gamaAuto") == "a" || localStorage.getItem("gamaAuto")== "b"){
+//esto puede ir afuera del if
+let diasAlquiler;
 let valorBaja=3450;
 let valorMedia=4800;
-if (localStorage.getItem("gamaAuto") == "a" || localStorage.getItem("gamaAuto")== "b"){
-    if(boton){
-         diasAlquiler = Number  (prompt("cuantos dias quiere alquilar el vehiculo:"));
-         localStorage.setItem("diasAlquiler", diasAlquiler)
+
+    if(botonPresupuesto){
+        // diasAlquiler = Number  (prompt("cuantos dias quiere alquilar el vehiculo:"));
+         localStorage.setItem("diasAlquiler", diff)
     }
 
         if (localStorage.getItem("gamaAuto") =="a"){
             
-        let resultado=  (valorBaja * localStorage.getItem("diasAlquiler"));
-        alert(`El valor del alquiler de un vehiculo gama baja por ${localStorage.getItem("diasAlquiler")} dias(s) es: ${resultado}$`);
+        let resultado=  (valorBaja * localStorage.getItem("diff"));
+        alert(`El valor del alquiler de un vehiculo gama baja por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$ `);
+        
         }
         else if(localStorage.getItem("gamaAuto")== "b"){
-            let resultado=  (valorMedia * localStorage.getItem("diasAlquiler"));
-            alert(`El valor del alquiler de un vehiculo gama media por ${localStorage.getItem("diasAlquiler")} dias(s) es: ${resultado}$`);;
+            let resultado=  (valorMedia * localStorage.getItem("diff"));
+            alert(`El valor del alquiler de un vehiculo gama media por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$`);;
+
         }
 }
      else  {
             alert("Por favor vuelva a seleccionar una gama de vehiculos");
         }
-}
-cotizadorAlquiler();
 
+
+    })
+}
+    
 
 
 class Gama {
@@ -164,11 +185,12 @@ let presupuesto=document.getElementById("presupuesto")
     }
 //calcular diferencia de fecha
 
-    let inicio=new Date (localStorage.getItem("fecha")).getTime()
-    let devolucion=new Date(localStorage.getItem("devolucion")).getTime()
-    let dif= devolucion - inicio
-    let diff= dif/(24*60*60*1000)
-    console.log(diff)
+    // let inicio=new Date (localStorage.getItem("fecha")).getTime()
+    // let devolucion=new Date(localStorage.getItem("devolucion")).getTime()
+    // let dif= devolucion - inicio
+    // let diff= dif/(24*60*60*1000)
+    // console.log(diff)
+    // localStorage.setItem("diff", diff)
 
     presupuesto.innerHTML +=`<p>El lugar de entrega sera en ${localStorage.getItem("lugar")} el dia  ${localStorage.getItem("fecha")} y debera ser devuelto el dia ${localStorage.getItem("devolucion")}</p>`
     //presupuesto.innerHTML +=`<p>El modelo que eligio es de gama ${gamaAutoText.toUpperCase()} por ${localStorage.getItem("diasAlquiler")} dia(s)</p>`
