@@ -9,6 +9,43 @@ let gamaAuto
 if(botonPresupuesto){
     botonPresupuesto.addEventListener("click", (e) => {
      gamaAuto= prompt("seleccione que gama del vehiculo que  desea alquilar, Gama baja escriba A, gama media escriba B").toLowerCase();
+
+        //prueba sweet alert
+        // const { value: gamaAuto } = await Swal.fire({
+        //     title: 'Elija una gama de vehiculo',
+        //     input: 'select',
+        //     inputOptions: {
+        //       'Gama Baja': {
+        //         gol: 'Volkswagen Gol Trend',
+        //         kwid:'Renault Kwid',
+        //         etios:'Toyota Etios',
+        //         cronos:'fiat Cronos'
+        //       },
+        //       'Gama Media': {
+        //         cruze:'chevrolet Cruze',
+        //         ffocus:'Ford Focus',
+        //         sentra:'Nissan sentra',
+        //         golf:'Volkswagen Golf'
+        //       },
+              
+        //     },
+        //     inputPlaceholder: 'Seleccione la gama y el modelo',
+        //     showCancelButton: true,
+        //     inputValidator: (value) => {
+        //       return new Promise((resolve) => {
+        //         // if (value === 'oranges') {
+        //         //   resolve()
+        //         // } else {
+        //         //   resolve('You need to select oranges :)')
+        //         // }
+        //       })
+        //     }
+        //   })
+          
+        //   if (gamaAuto) {
+        //     Swal.fire(`You selected: ${gamaAuto}`)
+        //   }
+
      localStorage.setItem("gamaAuto", gamaAuto)
 
 //calcular diferencia de fecha
@@ -35,12 +72,23 @@ let valorMedia=4800;
         if (localStorage.getItem("gamaAuto") =="a"){
             
         let resultado=  (valorBaja * localStorage.getItem("diff"));
-        alert(`El valor del alquiler de un vehiculo gama baja por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$ `);
+        Swal.fire(
+            `El valor del alquiler de un vehiculo gama baja por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$ `,
+            'Haga click para continuar!',
+            'success'
+          )
+        
+        // alert(`El valor del alquiler de un vehiculo gama baja por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$ `);
         
         }
         else if(localStorage.getItem("gamaAuto")== "b"){
             let resultado=  (valorMedia * localStorage.getItem("diff"));
-            alert(`El valor del alquiler de un vehiculo gama media por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$`);;
+            Swal.fire(
+                `El valor del alquiler de un vehiculo gama media por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$!`,
+                'Haga click para continuar!',
+                'success'
+              )
+            // alert(`El valor del alquiler de un vehiculo gama media por ${localStorage.getItem("diff")} dias(s) es: ${resultado}$`);;
 
         }
 }
