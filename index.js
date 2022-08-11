@@ -261,3 +261,21 @@ if(botonGamaMedia){
     })
     
 }
+
+const lista = document.getElementById("lugares");
+fetch("./data.json")
+.then(response=>response.json())
+.then(productos=>{
+    productos.forEach(producto=>{
+        const li= document.createElement("li");
+        li.innerHTML =`
+        <h4>Lugar ${producto.lugar}</h4>
+        <p>Stock ${producto.stock}</p>
+        <p>Vehiculo ${producto.Vehiculo}</p>
+        <hr />
+        `;
+        lista.append(li);
+        
+    })
+
+})

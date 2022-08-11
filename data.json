@@ -1,0 +1,18 @@
+[
+ {"stock":1, "lugar":"La Plata", "Vehiculo":"Chevrolet Cruze"},
+ {"stock":1, "lugar":"Aeropuerto de Cordoba ","Vehiculo": "Chevrolet Cruze"},
+ {"stock":1, "lugar":"Mar del Plata", "Vehiculo": "Chevrolet Cruze"},
+ {"stock":2, "lugar":"Aeropuerto de Ezeiza", "Vehiculo": "Chevrolet Cruze"},
+ {"stock":1, "lugar":"La Plata", "Vehiculo": "Nissan Sentra"},
+ {"stock":1, "lugar":"Aeropuerto de Cordoba",  "Vehiculo":"Nissan Sentra"},
+ {"stock":2, "lugar":"Mar del Plata","Vehiculo":"Nissan Sentra"},
+ {"stock":2, "lugar":"Aeropuerto de Ezeiza", "Vehiculo":"Nissan Sentra"},
+ {"stock":1, "lugar":"La Plata", "Vehiculo":"Volkswagen Golf"},
+ {"stock":2, "lugar":"Aeropuerto de Cordoba ", "Vehiculo":"Volkswagen Golf"},
+ {"stock":1, "lugar":"Mar del Plata", "Vehiculo":"Volkswagen Golf"},
+ {"stock":1, "lugar":"Aeropuerto de Ezeiza", "Vehiculo":"Volkswagen Golf"},
+ {"stock":0, "lugar":"La Plata", "Vehiculo":"Ford Focus"},
+ {"stock":3, "lugar":"Aeropuerto de Cordoba", "Vehiculo":"Ford Focus"},
+ {"stock":2, "lugar":"Mar del Plata", "Vehiculo":"Ford Focus"},
+ {"stock":2, "lugar":"Aeropuerto de Ezeiza", "Vehiculo":"Ford Focus"}
+]
