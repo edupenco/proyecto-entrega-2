@@ -28,7 +28,7 @@ header {
 .nav_sucursales {
   position: absolute;
   font-size: 1.8rem;
-  background-color: #00c8fa;
+  background-color: rgb(0, 200, 250);
   color: white;
   display: inline-block;
   right: 140px;
@@ -53,7 +53,7 @@ header {
   border: 10px;
   display: flex;
   justify-content: center;
-  background-color: #00c8fa;
+  background-color: rgba(0, 200, 250, 0.25);
   border-radius: 4px;
   list-style: none;
 }
@@ -67,7 +67,7 @@ header {
 
 .enlaces__lista a:hover {
   color: white;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 /* .jam-close{
@@ -89,7 +89,7 @@ header {
 
 .subtitulo__texto {
   position: relative;
-  color: #0d0ddd;
+  color: rgb(13, 13, 221);
   text-align: center;
   font-size: 2rem;
   margin-top: 15rem;
@@ -102,23 +102,20 @@ div.buscador {
   width: 220px;
   margin: 1rem;
 }
-
 div.buscador h3.buscador-lugar {
   border-radius: 8px;
   color: blue;
-  background-color: #00c8fa6c;
+  background-color: rgba(0, 200, 250, 0.4235294118);
 }
-
 div.buscador h3.buscador-inicio {
   border-radius: 8px;
   color: blue;
-  background-color: #00c8fa6c;
+  background-color: rgba(0, 200, 250, 0.4235294118);
 }
-
 div.buscador h3.buscador-entrega {
   border-radius: 8px;
   color: blue;
-  background-color: #00c8fa6c;
+  background-color: rgba(0, 200, 250, 0.4235294118);
 }
 
 .img-fluid {
@@ -167,7 +164,7 @@ div.buscador h3.buscador-entrega {
 .entrega {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: blue;
-  background-color: #00c8fa;
+  background-color: rgba(0, 200, 250, 0.25);
   border-radius: 8px;
   text-decoration: none;
 }
@@ -181,7 +178,7 @@ div.buscador h3.buscador-entrega {
 .btn-info {
   font-weight: bold;
   color: blue;
-  background-color: #00c8fa;
+  background-color: rgba(0, 200, 250, 0.25);
 }
 
 .btn-buscar {
@@ -190,7 +187,7 @@ div.buscador h3.buscador-entrega {
   margin-left: 1rem;
   font-weight: bold;
   color: blue;
-  background-color: #00c8fa;
+  background-color: rgba(0, 200, 250, 0.25);
 }
 
 .jam-close {
@@ -222,7 +219,6 @@ div.buscador h3.buscador-entrega {
   margin: 0 auto;
   padding: 1rem 1rem;
 }
-
 .container__img img {
   height: 100%;
   width: 100%;
@@ -256,7 +252,6 @@ ul {
   margin: 0 auto;
   padding: 1rem 1rem;
 }
-
 .container__img img {
   height: 100%;
   width: 100%;
@@ -271,7 +266,6 @@ ul {
   font-weight: bold;
   cursor: default;
 }
-
 .title span {
   background-image: linear-gradient(transparent calc(65% - 5px), #00c8fa 5px);
   background-size: 0;
@@ -279,7 +273,6 @@ ul {
   display: inline;
   transition: 0.5s ease;
 }
-
 .title:hover span {
   background-size: 100%;
 }
@@ -299,14 +292,14 @@ ul {
 
 .tituloFooter {
   color: blue;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3rem;
   justify-content: center;
 }
 
 .parrafo {
   color: blue;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.3rem;
   text-align: center;
 }
@@ -338,7 +331,7 @@ ul {
   color: #f1f1f1;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .buttons a:hover {
@@ -360,7 +353,7 @@ ul {
   color: #f1f1f1;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .buttonla {
@@ -404,7 +397,7 @@ footer {
 .nroReserva {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: blue;
-  background-color: #00c8fa;
+  background-color: rgba(0, 200, 250, 0.25);
   border-radius: 8px;
   text-decoration: none;
 }
@@ -493,7 +486,6 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-
 .section-vehiculos ul {
   padding-bottom: 2rem;
 }
@@ -510,7 +502,7 @@ footer {
 .registrate {
   margin-bottom: 4rem;
   font-size: 1.5rem;
-  background-color: #00c8fa;
+  background-color: rgb(0, 200, 250);
   color: blue;
 }
 
@@ -539,8 +531,126 @@ footer {
 }
 
 body {
-  background-color: #cecbcb;
-  font-family: 'Nunito', sans-serif;
+  background-color: rgb(206, 203, 203);
+  font-family: "Nunito", sans-serif;
+}
+
+.presupuesto__ {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.presupuesto__ span {
+  font-weight: bold;
+}
+
+.classContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.classContainer button {
+  margin: 1rem;
+}
+
+/* CSS */
+.btn-car {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.btn-car:hover,
+.btn-car:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.btn-car:hover {
+  transform: translateY(-1px);
+}
+
+.btn-car:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.underlined {
+  color: black;
+  flex: 1;
+  font-size: 2em;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+.underlined:hover {
+  background-size: 100% 100%;
+}
+.underlined--thin {
+  background-image: linear-gradient(to right, black 0, black 100%);
+}
+.underlined--thick {
+  background-position: 0 -0.3em;
+}
+.underlined--offset {
+  background-position: 0 0.2em;
+  box-shadow: inset 0 -0.5em 0 0 invisible;
+}
+.underlined--gradient {
+  background-position: 0 -0.1em;
+  background-image: linear-gradient(to right, rgb(135, 197, 255) 0, rgb(89, 110, 251) 100%);
+}
+.underlined--reverse {
+  background-position: 100% -0.1em;
+  transition: background 1s;
+  background-image: linear-gradient(to right, yellow 0, yellow 100%);
+}
+.underlined--gradient:hover {
+  color: white;
+}
+
+.autosContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+}
+
+.autosContainer__main {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 /*media query max 1023px*/
@@ -689,7 +799,6 @@ body {
     display: none;
   }
 }
-
 /* media query max600px*/
 @media screen and (max-width: 800px) {
   .logoheader {
@@ -744,7 +853,7 @@ body {
   .menu {
     display: block;
     font-size: 60px;
-    color: #e3eee4;
+    color: rgb(227, 238, 228);
     text-decoration: none;
     width: 100%;
     margin-right: 1rem;
@@ -904,7 +1013,6 @@ body {
     width: 80%;
   }
 }
-
 .auto-alquiler {
   padding: 50px;
   width: 80%;
@@ -913,17 +1021,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .auto-alquiler h2 {
   color: blue;
   text-align: center;
   font-size: 2rem;
   padding: 20px;
 }
-
 .auto-alquiler p {
   padding: 10px;
   color: blue;
   text-align: center;
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

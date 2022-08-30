@@ -1,28 +1,153 @@
-.titulosucursales{
+.titulosucursales {
     margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: bold;
     color: blue;
-    
+
 }
-.lista--sucursales{
+
+.lista--sucursales {
     display: flex;
     flex-direction: column;
-    
+
     align-items: center;
     margin-bottom: 3rem;
-    
+
     font-size: 1.5rem;
 }
-.menu{
+
+.menu {
     display: none;
 }
-.seccion1{
+
+.seccion1 {
     padding: 100px 0;
 }
 
-body{
+body {
     background-color: rgb(206, 203, 203);
     font-family: 'Nunito', sans-serif;
 }
+
+.presupuesto__ {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.presupuesto__ span {
+    font-weight: bold;
+}
+
+.classContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.classContainer button {
+    margin: 1rem;
+}
+
+
+/* CSS */
+.btn-car {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.btn-car:hover,
+.btn-car:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.btn-car:hover {
+    transform: translateY(-1px);
+}
+
+.btn-car:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.underlined {
+    color: black;
+    flex: 1;
+    font-size: 2em;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+    &:hover {
+      background-size: 100% 100%;
+    }
+    &--thin {
+      background-image: linear-gradient(to right, black 0, black 100%);
+    }
+    &--thick {
+      background-position: 0 -0.3em;
+    }
+    &--offset {
+      background-position: 0 0.2em;
+      //didn't find another solution than mask the underline shape by a box shadow with the same color than the bg
+      box-shadow: inset 0 -.5em 0 0 invisible;
+
+    }
+    &--gradient {
+      background-position: 0 -0.1em;
+      
+      background-image: linear-gradient(to right, rgb(135, 197, 255) 0, rgb(89, 110, 251) 100%);
+    }
+    &--reverse {
+      background-position: 100% -0.1em;
+      transition: background 1s; //yep, that's a long link
+      background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    }
+    &--gradient:hover {
+        color: white;
+    }
+  }
+  
+  .autosContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+  }
+
+  .autosContainer__main {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
